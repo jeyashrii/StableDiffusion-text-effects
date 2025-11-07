@@ -1,7 +1,8 @@
 # Stable Diffusion Text Effects
 
-Inspired by Adobe Firefly's text effects, Stable Diffusion Text Effects allows you to create mesmerizing and unique text effects with the power of stable diffusion algorithms.
+Stable Diffusion Text Effects allows you to create mesmerizing and unique text effects with the power of stable diffusion algorithms.
 
+![](assets/example_1.png)
 ![](assets/example_2.png)
 
 ## Prerequisites
@@ -12,7 +13,12 @@ Inspired by Adobe Firefly's text effects, Stable Diffusion Text Effects allows y
 
 ## Steps to Install
 
-1.Set COMMANDLINE_ARGS in stable-diffusion-webui\webui-user.bat as `set COMMANDLINE_ARGS=--api --nowebui --use-cpu all --no-half --precision full --cors-allow-origins "http://localhost:3000" --api-log --skip-torch-cuda-test` 2. Install the dependencies using `yarn`. 3. `cd` into `stable-diffusion-webui` and run the following command to start the Stable Diffusion API:
+1.Set COMMANDLINE_ARGS in stable-diffusion-webui\webui-user.bat as
+`set COMMANDLINE_ARGS=--api --nowebui --use-cpu all --no-half --precision full --cors-allow-origins "http://localhost:3000" --api-log --skip-torch-cuda-test` .
+
+2.  Install the dependencies using `yarn`.
+
+3.  `cd` into `stable-diffusion-webui` and run the following command to start the Stable Diffusion API:
 
 ````
 .\webui-user.bat --api --listen --cors-allow-origins="http://localhost:3000" --no-half --use-cpu all --precision full --skip-torch-cuda-test ``` (or)
