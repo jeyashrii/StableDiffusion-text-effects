@@ -2,9 +2,7 @@
 
 Inspired by Adobe Firefly's text effects, Stable Diffusion Text Effects allows you to create mesmerizing and unique text effects with the power of stable diffusion algorithms.
 
-![](assets/example_1.png)
 ![](assets/example_2.png)
-![](assets/example_3.png)
 
 ## Prerequisites
 
@@ -14,14 +12,17 @@ Inspired by Adobe Firefly's text effects, Stable Diffusion Text Effects allows y
 
 ## Steps to Install
 
-1. Clone Stable Diffusion Text Effects to your local machine: `git clone https://github.com/ihsavru/sd-text-effects.git`
-2. Install the dependencies using `yarn`.
-3. `cd` into `stable-diffusion-webui` and run the following command to start the Stable Diffusion API:
-  ```
-  ./webui.sh --nowebui --cors-allow-origins http://localhost:3000 --api-log
-  ```
-4. To run the Stable Diffusion Text Effects app, `cd` into `sd-text-effects` and use the following command:
-  ```
-  yarn start
-  ```
-5. Once the development server is running, you can access the app by opening your web browser and navigating to [localhost:3000](http://localhost:3000).
+1.Set COMMANDLINE_ARGS in stable-diffusion-webui\webui-user.bat as `set COMMANDLINE_ARGS=--api --nowebui --use-cpu all --no-half --precision full --cors-allow-origins "http://localhost:3000" --api-log --skip-torch-cuda-test` 2. Install the dependencies using `yarn`. 3. `cd` into `stable-diffusion-webui` and run the following command to start the Stable Diffusion API:
+
+````
+.\webui-user.bat --api --listen --cors-allow-origins="http://localhost:3000" --no-half --use-cpu all --precision full --skip-torch-cuda-test ``` (or)
+``` ./webui.sh --nowebui --cors-allow-origins http://localhost:3000 --api-log
+````
+
+4.Run the frontend app in the root directory
+
+```
+yarn start
+```
+
+5.App will be hosted on [localhost:3000](http://localhost:3000).
